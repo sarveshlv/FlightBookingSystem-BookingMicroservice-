@@ -25,7 +25,7 @@ public class BookingService {
 	
 
 	public List<FlightBooking> getBookingByPassengerId(int passengerId) { 
-		return (List<FlightBooking>) bookingRepository.findAllBypassengerId(passengerId); 
+		return (List<FlightBooking>) bookingRepository.findAllByPassengerId(passengerId); 
 	}
 	
 	

@@ -8,7 +8,17 @@ import com.booking.Model.FlightBooking;
 
 public interface BookingRepository extends JpaRepository<FlightBooking, Integer> {
 
-	List<FlightBooking> findAllBypassengerId(int passengerId);
+	List<FlightBooking> findAllByPassengerId(int passengerId);
+
+	FlightBooking findByBookingId(int bookingId);
+
+	FlightBooking findByPassengerId(int passengerId);
+	
+	
+
+
+	
+	
 
 	
 }

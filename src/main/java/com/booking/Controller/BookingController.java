@@ -33,10 +33,10 @@ import com.booking.vo.User;
 @RequestMapping("/booking")
 public class BookingController {
 	
-	private static final String FLIGHT_ID_URL="http://localhost:8020/flight/get-flight-by-id/";
-	private static final String FLIGHT_UPDATE_URL="http://localhost:8020/flight/update-flight";
-	private static final String USER_URL="http://localhost:8020/user/get-user/";
-	private static final String PASSENGER_URL="http://localhost:8020/passenger/addPassenger";
+	private static final String FLIGHT_ID_URL="http://FLIGHT-MICROSERVICE/flight/get-flight-by-id/";
+	private static final String FLIGHT_UPDATE_URL="http://FLIGHT-MICROSERVICE/flight/update-flight";
+	private static final String USER_URL="http://USER-MICROSERVICE/user/get-user/";
+	private static final String PASSENGER_URL="http://PASSENGER-MICROSERVICE/passenger/addPassenger";
 	
 	private static final String PASSPORT_PATTERN = "[a-zA-Z0-9]{10}";
 	private static final String DATE_PATTERN="[0-9]{2}-[0-9]{2}-[0-9]{4}";
